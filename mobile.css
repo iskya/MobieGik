@@ -1,0 +1,544 @@
+            body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+body {
+    padding-top: 0px;
+}
+
+
+/*Activate with * for red boxes over divs*/
+
+{
+    border: 1px solid red !important;
+}
+
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*---------------------------------*/
+
+*::focus {
+    outline: none;
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url('fonts/HelveticaLTStd-Light.otf');
+}
+
+@font-face {
+    font-family: Existence;
+    src: url('fonts/Existence-Light.otf');
+}
+
+.row-centered {
+    display: flex;
+    /* Flex Container */
+    flex-wrap: wrap;
+    /* Wrap the content to next line if required */
+    justify-content: center;
+    /* Horizontally content to center */
+    align-items: center;
+}
+
+.col-centered {
+    display: flex;
+    /* Flex Container */
+    flex-direction: column;
+    /* Flex Direction - Column */
+    align-self: flex-start;
+    /*Align vertically from the start of de box*/
+    float: none;
+    margin-right: 0 auto;
+}
+
+.existence {
+    font-family: Existence;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.yellow {
+    color: #e0b07e;
+}
+
+.purple {
+    color: rgb(84, 64, 139);
+}
+
+.grey {
+    color: rgb(102, 102, 103);
+}
+
+.white {
+    color: white;
+}
+
+.emerald {
+    color: #a3c9a4;
+}
+
+.navbar .navbar-nav {
+    padding: 0;
+    margin: 0;
+    float: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.colornav {
+    background: #7666a2;
+    border: none;
+    font-family: "Lato";
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1em;
+    color: white;
+    height: auto;
+}
+
+.navbar-header {
+    min-height: 60px;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 15px 0 0 15px;
+    text-align: center;
+    vertical-align: baseline;
+    float: left;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+    padding: 1px;
+    border: 5px solid;
+    border-color: #7666a2 !important;
+    box-shadow: 1px;
+    background-color: #7666a2 !important;
+}
+
+.navbar-nav > li {
+    display: inline-flex;
+    float: none;
+    color: white;
+    background-color: #7666a2 !important;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:active {
+    color: white;
+    background-color: #7666a2 !important;
+}
+
+.navbar-nav > li > a::after,
+.navbar-nav > li > a::before {
+    color: white;
+    background-color: #7666a2 !important;
+}
+
+.navbar-nav > li > a:visited {
+    background-color: rgb(84, 64, 139) !important;
+    border-color: white;
+}
+
+.glyphicon {
+    color: rgb(84, 64, 139);
+    font-size: 30px;
+    vertical-align: baseline;
+    padding-top: 2px;
+}
+
+.navbar-header button {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    width: 12%;
+    height: auto;
+    background-color: #7666a2;
+    line-height: 1.5em;
+    padding: 0.2em 0;
+    font-size: 16px;
+    border: 2px solid rgb(84, 64, 139) !important;
+    outline: none;
+    vertical-align: middle;
+}
+
+.navbar-header button::focus {
+    outline: none;
+}
+
+.navbar-header button span::before,
+.navbar-header button span::after,
+.navbar-header button span::hover,
+.navbar-header button span::focus,
+.navbar-header button span::active,
+.navbar-header button span::visited {
+    background-color: #fff !important;
+}
+
+.c-hamburger--rot span {
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+
+/* active state, i.e. menu open */
+
+.c-hamburger--rot span:active {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#home {
+    height: 100%;
+    overflow: hidden;
+}
+
+.intro {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    text-align: center;
+    color: white;
+    background: url(img/home.jpg) no-repeat bottom center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro-body {
+    margin: 70px 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.intro-col {
+    margin: 0;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    vertical-align: middle;
+}
+
+.row-img {
+    float: left;
+    min-width: 150px;
+}
+
+.row-text {
+    float: left;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    line-height: 1.5em;
+    min-width: 100%;
+    top: 70%;
+}
+
+#services {
+    overflow: auto;
+    height: auto;
+    min-height: 50%;
+    padding: 50px;
+    min-height:50vh;
+}
+
+.service {
+    height: auto;
+    background-color: whitesmoke;
+    justify-content: ;
+    align-items: baseline;
+    width: 85%;
+}
+
+.serv {
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    margin: 10px;
+    min-width: 210px;
+    min-height: 300px;
+}
+
+#us {
+    min-height: 50%;
+    vertical-align: middle;
+    margin: auto 0;
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+    min-height: 50vh;
+}
+
+.us-container {
+    display: flex;
+    display: -webkit-flex;
+    vertical-align: middle;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    min-height: 50vh;
+    justify-content: space-around;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+.us-par {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 2em;
+    word-spacing: 0.30em;
+    vertical-align: middle;
+}
+
+.us-end {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.5em;
+    vertical-align: middle;
+}
+
+.bck2 {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    background: url(img/us.jpg) no-repeat bottom center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    align-self: center;
+}
+
+#portfolio {
+    background-color: whitesmoke;
+    overflow: auto;
+    height: auto;
+    width: 100%;
+    min-height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.title {
+    margin: 30px 0;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.port-btn {
+    margin: 30px;
+    padding: 0px;
+    font-family: Helvetica;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+
+.b1 {
+    background-color: transparent;
+    margin: 0 5px;
+    border: none;
+    outline: none;
+}
+
+.port-more {
+    margin-top: 50px;
+    padding: 0;
+}
+
+.b2 {
+    width: 120px;
+    background-color: rgb(84, 64, 139);
+    line-height: 2em;
+    padding: 8px 15px 5px 15px;
+    font-family: Helvetica;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.port-img {
+    background-color: gray;
+    padding: 40px;
+    width: 85%;
+    min-height: 200%;
+}
+
+.construction {
+    margin: 50px 0;
+    padding: 80px 0;
+    background: url(img/construccion.png) no-repeat center center scroll;
+    min-width: 100%;
+    min-height: auto;
+    font-family: Helvetica;
+    font-size: 25px;
+    line-height: 1.5em;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
+}
+
+#contact {
+    background-color: whitesmoke;
+    width: 100%;
+    overflow: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-form {
+    margin: 0;
+    padding: 3em;
+}
+
+.contact-form form input.form-control,
+.contact-form form textarea.form-control,
+.contact-form form select.form-control {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: rgb(84, 64, 139) !important;
+}
+
+.contact-form .form-group button {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    width: 120px;
+    background-color: rgb(84, 64, 139);
+    line-height: 2em;
+    padding: 8px 15px 5px 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+
+/*Change the placeholder color*/
+
+.form-control::-webkit-input-placeholder,
+.form-control textarea::-webkit-textarea-placeholder {
+    color: rgb(84, 64, 139) !important;
+    font-size: 16px !important;
+}
+
+.form-control:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: rgb(84, 64, 139) !important;
+    font-size: 16px !important;
+}
+
+.form-control::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: rgb(84, 64, 139) !important;
+    font-size: 16px !important;
+}
+
+.form-control:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: rgb(84, 64, 139) !important;
+}
+
+.contact-form p,
+form {
+    font-family: Helvetica, sans-serif;
+}
+
+.contact-form form button,
+.contact-form form button:hover {
+    color: white !important;
+    background-color: rgb(84, 64, 139);
+}
+
+.contact-form .form-control:focus {
+    border-color: rgb(84, 64, 139);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 16px !important;
+}
+
+.info {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+    font-size: 15px;
+}
+
+.mail {
+    margin: 30px;
+}
+
+.icons a:hover span {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+    animation: pulse 1500ms;
+}
+
+.el {
+    color: rgb(84, 64, 139);
+    padding: 0 4px;
+}
+
+#footer {
+    background-color: whitesmoke;
+    padding: 3px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    border-top: 30px solid transparent;
+}
+
+@media(min-width:320px) {
+    header {
+        min-height: 100%;
+    }
+    header .bck1 {
+        position: absolute;
+        top: 50%;
+        padding: 0 50px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        @media (min-width: 768px) {
+            .bck1 {
+                height: 100%;
+                padding: 0;
+            }
