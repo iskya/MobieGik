@@ -9,6 +9,7 @@ html {
 
 body {
     padding-top: 0px;
+    font-size: 100%;
 }
 
 
@@ -66,11 +67,6 @@ body {
     font-family: Existence;
 }
 
-h2 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-}
-
 .yellow {
     color: #e0b07e;
 }
@@ -103,7 +99,7 @@ h2 {
     background: rgb(84, 64, 139);
     border: none;
     font-family: "Lato";
-    font-size: 20px;
+    font-size: 2em;
     font-weight: 300;
     line-height: 1em;
     color: white;
@@ -174,7 +170,7 @@ h2 {
     background-color: #7666a2;
     line-height: 1.5em;
     padding: 0.2em 0;
-    font-size: 16px;
+    font-size: 1em;
     border: 2px solid rgb(84, 64, 139) !important;
     outline: none;
     vertical-align: middle;
@@ -231,32 +227,37 @@ h2 {
     margin: 70px 0;
     padding: 0;
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 .intro-col {
     margin: 0;
-    height: 70%;
+    height: 90%;
     display: flex;
     flex-direction: column;
-    justify-content:center ;
+    justify-content:center;
     vertical-align: middle;
 }
 
 .row-img {
-    float: left;
-    min-width: 150px;
+    display: flex;
+    justify-content: center; 
+    border-bottom: 4em solid transparent;
+}
+
+.intro-img{
+    min-width: 20vw;
+  
 }
 
 .row-text {
-    float: left;
+    float: none;
     font-family: 'Lato', sans-serif;
-    font-size: 30px;
+    font-size: 4em;
     font-weight: 100;
     color: rgb(255, 255, 255);
     line-height: 1.5em;
     min-width: 100%;
-    top: 70%;
 }
 
 #services {
@@ -279,22 +280,31 @@ h2 {
     font-family: 'Lato', sans-serif;
     font-weight: 200;
     margin: 10px;
+    
     min-width: 210px;
     min-height: 300px;
 }
 
+p{
+    font-size: 1.5em;
+    font-family: 'Lato',sans-serif;
+    font-weight: 300;
+}
+
 #us {
-    min-height: 50%;
-    vertical-align: middle;
-    margin: auto 0;
-    padding: 10px;
-    align-items: center;
-    align-content: center;
     min-height: 50vh;
+    min-width: 100vw;
+    overflow: auto;
+    margin: auto 0;
+    padding: 4.5em;
+    justify-content: center; /*important justify and flex for vertically align*/
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .us-container {
-    padding: 60px;
+    padding: 3em;
     display: flex;
     display: -webkit-flex;
     vertical-align: middle;
@@ -311,7 +321,7 @@ h2 {
 .us-par {
     font-family: 'Lato', sans-serif;
     font-weight: 100;
-    font-size: 18px;
+    font-size: 1.7em;
     line-height: 2em;
     word-spacing: 0.30em;
     vertical-align: middle;
@@ -320,7 +330,7 @@ h2 {
 .us-end {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 22px;
+    font-size: 2.5em;
     line-height: 1.5em;
     vertical-align: middle;
 }
@@ -341,40 +351,43 @@ h2 {
     align-self: center;
 }
 
+
 #portfolio {
     background-color: whitesmoke;
-    overflow: auto;
-    min-height: 100vh;
+    height: 100vh;
     min-width: 100vw;
-    min-height: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 50px;
+    overflow: auto;
+    margin: auto 0;
+    padding: 4.5em;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .title {
-    margin: 20px 0;
-    font-size: 20px;
-    line-height: 1.5em;
+    margin: 1.2em 0;
+    font-family: 'Lato',sans-serif;
+    font-size: 2.5em;
+    line-height: 1.5em;  
 }
 
 .port-btn {
-    margin: 10px;
-    padding: 0px;
+    margin: 0.8em;
+    padding: 0;
     font-family: Helvetica;
     line-height: 1.5em;
-    font-size: 18px;
+    font-size: 1.6em;
 }
 
 .b1 {
     background-color: transparent;
-    margin: 0 5px;
+    margin: 0 0.3em;
     border: none;
     outline: none;
 }
 
 .port-more {
-    margin-top: 30px;
+    margin-top: 2.5em;
     padding: 0;
 }
 
@@ -382,47 +395,54 @@ h2 {
     width: 120px;
     background-color: rgb(84, 64, 139);
     line-height: 2em;
-    padding: 8px 15px 5px 15px;
+    padding: 0.6em 1.2em 0.3em 1.2em;
     font-family: Helvetica;
-    font-size: 16px;
+    font-size: 1.6em;
     border: none;
     outline: none;
 }
 
 .port-img {
     background-color: gray;
-    padding: 40px;
-    width: 85%;
-    min-height: 200%;
+    padding: 3.8em;
+    min-width: 70%;
+    max-width: 80%;
+    min-height: 40vh;
+    display: flex;
 }
 
 .construction {
-    margin: 50px 0;
-    padding: 80px 0;
+    margin: 2em 0;
+    padding: 3em 0;
+    min-height: 30em;  
     background: url(img/construccion.png) no-repeat center center scroll;
-    min-width: 100%;
-    min-height: auto;
-    font-family: Helvetica;
-    font-size: 25px;
-    line-height: 1.5em;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     background-size: contain;
     -o-background-size: contain;
 }
 
+.construction p{
+    min-width: 100%;
+    font-family: Helvetica;
+    font-size: 2.2em;
+    line-height: 2.5em;
+}
+
 #contact {
     background-color: whitesmoke;
-    min-height: 100vh;
-    min-width:100vw;
     overflow: auto;
-    height: auto;
-    padding: 0;
-    margin: 0;
+    margin: auto 0;
+    height: 100vh;
+    min-width: 100vw;
+    padding: 4.5em;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #contact .title{
-    padding: 2em 0 0;
+    padding: 1.5em 0 0;
 }
 
 .contact-form {
@@ -522,15 +542,18 @@ form {
 
 .el {
     color: rgb(84, 64, 139);
-    padding: 0 4px;
+    padding: 0 0.4em;
 }
 
 #footer {
+    min-width: 100vw;
+    min-height: 10%;
     background-color: whitesmoke;
-    padding: 3px;
+    padding:0;
+    margin: auto 0;
     font-family: 'Lato', sans-serif;
     font-weight: 100;
-    border-top: 30px solid transparent;
+    border-top: 2.5em solid transparent;
 }
 
 @media(min-width:320px) {
@@ -550,3 +573,10 @@ form {
                 padding: 0;
             }
             
+            
+@media(min-width:1200px){
+    .row-text{
+        font-size: 6em;
+    }    
+            }
+    
