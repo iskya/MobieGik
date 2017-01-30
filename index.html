@@ -2,22 +2,25 @@
 <html lang="es">
 
 <head>
+    <!-- SEO -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <meta name="viewport" content=" minimum-scale=1.0, initial-scale=1.0, user-scalable=0">
     <meta name="description" content="Especializados en diseño y programación, ofrecemos soluciones creativas y tecnológicas para proyectos publicitarios">
     <meta name="keywords" content="web, diseño, multimedia, contenidos, publicidad" />
     <meta name="author" content="Iskya Garcia and Paula Michunovich">
-    <!-- Bootstrap Core CSS -->
+    <!-- Elusive Lato -->
     <link href="https://code.rifix.net/elusiveicons/2.0.0/css/elusive-icons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+     <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <!-- Title and favicon -->
     <title>MobieGik Digital Media</title>
     <link rel="shortcut icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
     <link rel="shortcut icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" type="text/css" href="mobile.css"> </head>
 
 <body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="40">
@@ -38,19 +41,21 @@
             </div>
         </div>
     </nav>
+    
     <header id="home" class="intro container-fluid">
         <div class="intro-body row row-centered">
             <div class="col-md-10 col-sm-10 col-xs-10 intro-col">
                 <div class="row row-centered row-img">
-                    <div class="col-md-3 col-sm-3 col-xs-5 col-centered"> <img class="intro-img img-responsive center-block" src="img/Logo.png" alt="logo MobieGik"> </div>
+                    <div class="col-md-5 col-sm-5 col-xs-6 col-centered"> <img class="intro-img img-responsive center-block" src="img/Logo.png" alt="logo MobieGik"> </div>
                 </div>
                 <div class="row row-centered row-text">
                     <div class="col-md-12 col-sm-12 col-xs-12 col-centered">
-                        <h2 class="intro-text white text-center">Somos creadores de <span class="yellow">sentido</span>, proveedores de <span class="yellow">historias</span></h2> </div>
+                        <h1 class="intro-text white text-center">Somos creadores de <span class="yellow">sentido</span>, proveedores de <span class="yellow">historias</span></h1> </div>
                 </div>
             </div>
         </div>
     </header>
+    
     <section id="services" class="container-fluid row-centered">
         <div class="row row-centered service grey">
             <div class="col-sm-2 col-md-2 col-xs-8 serv text-center"> <img class="img-responsive center-block" src="img/heart.png" alt="icono corazon">
@@ -80,18 +85,23 @@
             </div>
         </div>
     </section>
+    
     <section id="us" class="container-fluid bck2">
         <div class="row row-centered">
-            <div class="col-sm-8 col-md-8 col-xs-11 col-centered us-container">
+            <div class="col-sm-8 col-md-8 col-xs-11 col-lg-7 col-centered us-container">
                 <p class="text-justify white us-par"><span class="existence">Mobie<span class="emerald">Gik</span></span> es la confluencia entre diseño y tecnología, que evoluciona hacia nuevas formas de comunicación; incorporando la programación como una de las principales herramientas para crear experiencias interactivas, únicas y originales en proyectos de comunicación, marketing y publicitarios. </p>
                 <h3 class="white us-end">Simplemente, traemos historias a la realidad!</h3> </div>
         </div>
     </section>
-
+    
     <section id="portfolio" class="container-fluid">
         <div class="row row-centered text-center title">
-            <h2 class="grey">Nuestro <span class="purple" >portfolio</span></h2> </div>
-        <div class="row row-centered">
+           <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+            <h2 class="grey">Nuestro <span class="purple" >portfolio</span></h2>
+            </div>
+            </div>
+            
+        <div class="row row-centered ">
             <div class="col-sm-6 col-md-6 col-xs-8 text-center port-btn">
                 <button class="b1" type="button" onclick="showImg('all')" value="ALL">ALL</button> <span>|</span>
                 <button class="b1" type="button" onclick="showImg('diseño')" value="diseño">DISEÑO</button> <span>|</span>
@@ -99,17 +109,16 @@
                 <button class="b1" type="button" onclick="showImg('media')" value="MEDIA">MEDIA</button>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row row-centered center-block port-img">
-                <div class="col-sm-10 col-xs-10 col-centered text-center construction">
-                    <p class="purple">EN CONSTRUCCIÓN</p>
-                </div>
+        <div class="row row-centered center-block port-img vertical-align">
+            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-centered text-center construction">
+                <p class="white">EN CONSTRUCCIÓN</p>
             </div>
         </div>
-        <div class="row row-centered port-more">
+        <div class="row row-centered port-more ">
             <button class="white btn-more b2" type="button" onclick="showImg('all')" value="more">VER MÁS</button>
         </div>
     </section>
+    
     <section id="contact" class="container-fluid">
         <div class="row text-center title">
             <h2 class="grey">Contacta<span class="purple">nos</span></h2> </div>
@@ -147,6 +156,7 @@
             </div>
         </div>
     </section>
+    
     <footer id="footer" class="footer container-fluid">
         <div class="row row-centered">
             <div class="col-sm-8 text-center">
