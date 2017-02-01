@@ -437,9 +437,10 @@ p{
     background-color: whitesmoke;
     overflow: auto;
     margin: 0 auto;
+    padding: 2em;
     height: 100vh;
     min-width: 100vw;
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
 }
