@@ -261,7 +261,7 @@ body {
 }
 
 #services {
-    overflow: auto;
+    overflow: hidden;
     height: auto;
     min-height: 50%;
     padding: 65px;
@@ -294,7 +294,7 @@ p{
 #us {
     min-height: 50vh;
     min-width: 100vw;
-    overflow: auto;
+    overflow: hidden;
     margin: auto 0;
     padding: 4.5em;
     justify-content: center; /*important justify and flex for vertically align*/
@@ -304,7 +304,7 @@ p{
 }
 
 .us-container {
-    padding: 3em;
+    padding: 0;
     display: flex;
     display: -webkit-flex;
     vertical-align: middle;
@@ -321,7 +321,7 @@ p{
 .us-par {
     font-family: 'Lato', sans-serif;
     font-weight: 100;
-    font-size: 1.7em;
+    font-size: 2.3em;
     line-height: 2em;
     word-spacing: 0.30em;
     vertical-align: middle;
@@ -330,7 +330,7 @@ p{
 .us-end {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 2.5em;
+    font-size: 2.6em;
     line-height: 1.5em;
     vertical-align: middle;
 }
@@ -354,15 +354,17 @@ p{
 
 #portfolio {
     background-color: whitesmoke;
-    height: 100vh;
+    min-height: 50vh;
     min-width: 100vw;
-    overflow: auto;
+    overflow: hidden;
     margin: auto 0;
     padding: 2em;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
 }
+
+
 
 .title {
     margin: auto 0;
@@ -372,75 +374,30 @@ p{
     padding: 1em;
     
 }
-
-.port-btn {
-    margin: auto 0;
-    padding: 0;
-    font-family: Helvetica;
-    line-height: 1.5em;
-    font-size: 1.6em;
+#myCarousel{
+    min-width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;    
 }
 
-.b1 {
-    background-color: transparent;
-    margin: 0 0.3em;
-    border: none;
-    outline: none;
-}
+.carousel-inner,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    min-width: 100vw;
+    margin:0;
+  }
 
-.port-more {
-    margin-top: 2.5em;
-    padding: 0;
-}
 
-.b2 {
-    width: 120px;
-    background-color: rgb(84, 64, 139);
-    line-height: 2em;
-    padding: 0.6em 1.2em 0.3em 1.2em;
-    font-family: Helvetica;
-    font-size: 1.6em;
-    border: none;
-    outline: none;
-}
 
-.port-img {
-    background-color: gray;
-    margin: auto 0;
-    float: none;
-    padding: 3.8em;
-    min-width: 70%;
-    max-width: 80%;
-    min-height: 40vh;
-    align-self: center;
-}
-
-.construction {
-    margin: 2em 0;
-    padding: 3em 0;
-    min-height: 30em;  
-    background: url(img/construccion.png) no-repeat center center scroll;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    background-size: contain;
-    -o-background-size: contain;
-}
-
-.construction p{
-    min-width: 100%;
-    font-family: Helvetica;
-    font-size: 2.2em;
-    line-height: 2.5em;
-}
 
 #contact {
     background-color: whitesmoke;
     overflow: auto;
     margin: 0 auto;
-    padding: 2em;
-    height: 100vh;
+    min-height: 100vh;
     min-width: 100vw;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
     flex-direction: column;
 }
@@ -531,27 +488,18 @@ form {
     margin: 30px;
 }
 
-.icons a:hover span {
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -ms--transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    transition: all 0.2s;
-    animation: pulse 1500ms;
-}
+
 
 .el {
     color: rgb(84, 64, 139);
     padding: 0 0.4em;
 }
 
+
+
 #footer {
     min-width: 100vw;
-    min-height: 10%;
+    min-height: 10vh;
     background-color: whitesmoke;
     margin: auto 0;
     font-family: 'Lato', sans-serif;
@@ -559,33 +507,5 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
 }
-.footer-row{
-    margin: auto 0;
-    float: none;
-}
-
-@media(min-width:320px) {
-    header {
-        min-height: 100%;
-    }
-    header .bck1 {
-        position: absolute;
-        top: 50%;
-        padding: 0 50px;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        @media (min-width: 768px) {
-            .bck1 {
-                height: 100%;
-                padding: 0;
-            }
-            
-            
-@media(min-width:1200px){
-    .row-text{
-        font-size: 6em;
-    }    
-            }
-    
