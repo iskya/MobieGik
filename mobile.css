@@ -325,6 +325,7 @@ p{
     line-height: 2em;
     word-spacing: 0.30em;
     vertical-align: middle;
+    text-align: justify;
 }
 
 .us-end {
@@ -508,4 +509,12 @@ form {
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
+    padding-top: 20px;
+}
+
+@media screen and (max-device-width: 500px) and (orientation: portrait){
+    .us-par{
+        font-size: 2em;
+        text-align: center;
+    }
 }
